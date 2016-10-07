@@ -1,0 +1,16 @@
+.marg{
+  margin-bottom:20px;
+  margin-top:20px;
+}
+.top{
+  font-size:30px;
+  color:#e6855e;
+  font-weight:bold;
+}
+.soto{
+  background-color:#ffffff;
+}
+.padd{
+  padding-left:18%;
+  padding-right:18%;
+}
