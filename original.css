@@ -1,0 +1,102 @@
+.unkoko{
+  font-size: 40px;
+}
+.marg{
+  margin-bottom:20px;
+  margin-top:20px;
+}
+.top{
+  font-size:30px;
+  color:#e6855e;
+  font-weight:bold;
+}
+.soto{
+  background-color:#ffffff;
+}
+.padd{
+  padding-left:16.6%;
+  padding-right:16.6%;
+}
+p.gazo img{
+  width:100%
+}
+.graf-title{
+  text-align: center;
+}
+
+ul.topli{
+ width:960px;
+ height:70px;
+}
+
+.topli li{
+ list-style-type:none;
+ display: inline;
+ float: left;
+}
+
+.topli li.topli-a a{
+ background-color: #003161 ;
+ color:#ffffff ;
+ display: block;
+ width:330px;
+ margin-right:10px;
+ height:70px;
+ padding: 9px 0px 0px 0px;
+ text-align: center;
+ text-decoration:none;
+ font-size: 200%;
+}
+
+.topli li.topli-a a:hover{
+ background-color:#66819c ;
+}
+
+.topli li.topli-b a{
+ background-color: #6da7e0 ;
+ color:#ffffff ;
+ display: block;
+ width:330px;
+ margin-right:10px;
+ height:70px;
+ padding: 9px 0px 0px 0px;
+ text-align: center;
+ text-decoration:none;
+ font-size: 200%;
+}
+
+.topli li.topli-b a:hover{
+ background-color:#66819c ;
+}
+
+.tinpo{
+  padding-top:50px;
+  padding-bottom: 50px;
+}
+p.member-image img{
+  width:35%;
+  padding-right:20px;
+}
+.left-{
+  float:left;
+}
+.honbun{
+  padding-top:20px;
+}
+.link{
+  background-color: #f8f8f8	;
+  margin-bottom:10px;
+  padding-bottom:10px;
+  padding-top:1px;
+}
+
+.link h3{
+  padding-left:20px;
+  padding:auto;
+}
+.link h4{
+  padding-left:50px;
+}
+.link-margin{
+  margin-bottom: 30px;
+}

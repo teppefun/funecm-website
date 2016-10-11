@@ -13,14 +13,14 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/original.css" rel="stylesheet">
+    <link href="original.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="css/jsxgraph.css">
-    <script type="text/javascript" src="js/jsxgraphcore.js"></script>
-    <script type="text/javascript" src="js/GeonextReader.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css" />
+    <script type="text/javascript" src="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore.js"></script>
+    <script type="text/javascript" src="http://jsxgraph.uni-bayreuth.de/distrib/GeonextReader.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -34,10 +34,6 @@
 
     <div id="wrapper" class="padd">
 
-        <div id="navbar">
-            <span id="button" class="icon icon-whatever"></span>
-        </div>
-        
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
@@ -60,7 +56,6 @@
                 </li>
             </ul>
         </div>
-
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
@@ -71,36 +66,41 @@
                         <h1 class="bg-primary">ECMについて/活動目的</h1>
                         <h3><mark>ECMとは何？</mark></h3>
                         <h4 class="marg container-fluid">
-                          ECMとは、Elliptic Curve Method(楕円曲線法)のことで、楕円曲線法とは、楕円曲線を用いて素因数分解するアルゴリズム(手法)のことです↓(楕円曲線のグラフ)<br><br>
+                          ECMとは、Elliptic Curve Method(楕円曲線法)のことで、楕円曲線法とは、楕円曲線を用いて素因数分解するアルゴリズム(手法)のことです。<br><br><br>
+                          <p class="graf-title">
+                            楕円曲線のグラフ<br>
+                          </p>
 
-                        <div id='jxgbox' class='jxgbox' style='width:600px; height:400px;'></div>
+                        <div id='jxgbox' class='jxgbox' style='width:100%; height:400px;'></div>
                         <script type='text/javascript'>
                         JXG.Options.axis.strokeColor = '#cccccc';
                         brd = JXG.JSXGraph.initBoard('jxgbox', {boundingbox: [-15, 10, 15, -10], axis:true});
                         brd.suspendUpdate();
-                        var b = brd.create('slider',[[1,-3],[10,-3],[-10,2.10,10]],{name:'a'});
-                        var a = brd.create('slider',[[1,-4],[10,-4],[-10,-9.52,10]],{name:'b'});
+                        var b = brd.create('slider',[[1,-3],[10,-3],[-15,2.10,15]],{name:'a'});
+                        var a = brd.create('slider',[[1,-4],[10,-4],[-15,-9.52,15]],{name:'b'});
 
                         var c1 = brd.create('functiongraph', [function(x){ return Math.sqrt(x*x*x+a.Value()*x+b.Value()); }],
                                     {strokeWidth:3,strokeColor:'black'});
-                        var c2 = brd.create('functiongraph', [function(x){ return -Math.sqrt(x*x*x+a.Value()*x+b.Value()); }], 
+                        var c2 = brd.create('functiongraph', [function(x){ return -Math.sqrt(x*x*x+a.Value()*x+b.Value()); }],
                                    {strokeWidth:3,strokeColor:'black'});
                         brd.unsuspendUpdate();
-                        </script><br><br>
+                        </script><br><br?
 
                           私たちは、このECMを用いて素因数分解を行う活動しています。<br><br><h4>
-
                        <h3><mark>何故素因数分解をするのか？</mark></h3>
                        <h4 class="marg container-fluid">
                          現在、インターネットにおける通信には、公開鍵暗号と呼ばれる暗号技術が広く使われており、それらの暗号技術の安全性の根拠には素因数分解の難しさが関係しています。<br><br>
                          例えば、15という数字は、3×5に素因数分解することができます。公開鍵暗号において、15という数字が暗号化するための鍵(公開鍵といいます)にあたり、3と5という2つの数字が復号するための鍵(秘密鍵といいます)にあたります。<br>
                          このような2桁の合成数ならば計算機を使わずとも頭で簡単に答えが出せますが、158041という数字を因数分解してみましょう。と言われたとき、頭での計算は難しいと思われます。<br><br>
+                         <p class="gazo">
+                           <img src="image/gazo1.PNG"><br>
+                         </p>
                          このように素因数分解は、桁数が大きくなればなるほど難しくなります。これは、人の頭だけに限らず、コンピューターも同じです。<br><br>
                          実際にはもっと大きな桁数の数が使われていますが、このようにして素因数分解と公開鍵暗号は関連しています。そして、私たちはその暗号技術の改良の貢献のために楕円曲線法を使用し素因数分解をしているのです。<br><br>
                        </h4>
                        <h3><mark>ECM-NETとは？</mark></h3>
                           <h4 class="marg container-fluid">
-                            ECM-NETとは、楕円曲線法を用いて大きな桁数の素因数を見つけることを目的としたコンペティション(競争しあうサイト)のことです。ECN-NETには、現在登録されている素因数よりも大きな桁数の素因数を発見することで全世界誰でもランクインし、名前を載せることができます。<br><br>
+                            <a href="https://members.loria.fr/PZimmermann/records/ecmnet.html">ECM-NET</a>とは、楕円曲線法を用いて大きな桁数の素因数を見つけることを目的としたコンペティション(競争しあうサイト)のことです。ECN-NETには、現在登録されている素因数よりも大きな桁数の素因数を発見することで全世界誰でもランクインし、名前を載せることができます。<br><br>
                             私たちは、どのくらい大きな桁数の素因数を見つけたかの指標として、このECM-NETというサイトを利用し、FUN-ECMという名前を載せることを活動目標にしています。
                           </h4>
                     </div>
@@ -114,8 +114,7 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-    
-    
+
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 

@@ -2,6 +2,17 @@
 <html lang="japanese">
 
 <head>
+    <script src="jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <script type="text/javascript">
+        jQuery(document).ready(function($){
+            $('.bxslider').bxSlider({
+                auto: true,
+            });
+        });
+    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
@@ -12,7 +23,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/original.css" rel="stylesheet">
+    <link href="original.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
 
@@ -22,12 +33,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 <body>
-
     <div id="wrapper" class="padd">
-
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
@@ -57,9 +65,26 @@
           <div class="soto container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="bg-primary">FUN-ECMへようこそ！</h2>
+                        <h1 class="bg-primary unkoko">FUN-ECMへようこそ！</h1>
+                        <ul class="bxslider">
+                          <li><img src="image/ECM1.jpg"></li>
+                          <li><img src="image/ECM2.jpg"></li>
+                          <li><img src="image/ECM3.jpg"></li>
+                        </ul>
                         <h3 class="container-fluid">私たちは、公立はこだて未来大学の講義の一つであるシステム情報科学実習のグループの一つです。<br>FUNとは未来大学のことであり、ECMとはElliptic Curve Method(楕円曲線法)の略です。<br><br>このサイトでは、FUN-ECMの活動内容と、ECMとはどのようなものかについて発信するために開設しました。</h3>
 
+                    <div class="tinpo">
+                        <ul class="topli">
+                            <li class="topli-a"><a href="ecm.html">ECMとは</a></li>
+                            <li class="topli-b"><a href="log.html">活動記録</a></li>
+                        </ul>
+
+                        <ul class="topli">
+                            <li class="topli-b"><a href="member.html">メンバー紹介</a></li>
+                            <li class="topli-a"><a href="unchi.html">リンク</a></li>
+                       </ul>
+                   </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -76,7 +101,7 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Menu Toggle Script -->
-<!--   <script>
+   <!--<script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
