@@ -1,9 +1,14 @@
-.bigfont-size{
+
+ .bigfont-size{
   font-size: 40px;
 }
 .marg{
   margin-bottom:20px;
   margin-top:20px;
+}
+.padd{
+  padding-left:16.6%;
+  padding-right:16.6%;
 }
 .top{
   font-size:30px;
@@ -13,76 +18,103 @@
 .soto{
   background-color:#ffffff;
 }
-.padd{
-  padding-left:16.6%;
-  padding-right:16.6%;
-}
 p.gazo img{
   width:100%
 }
 .graf-title{
   text-align: center;
 }
-
-ul.topli{
- width:960px;
- height:70px;
+.padd{
+  padding-left:16.6%;
+  padding-right:16.6%;
+}
+#button-t{
+ padding-top: 50px;
 }
 
-.topli li{
- list-style-type:none;
- display: inline;
+#button-t ul{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+#button-t li{
+display: inline;
+padding: 0;
+margin: 0;
+}
+
+#button-t li a{
+display: block;
+border: 1px solid #9F99A3 ;
+padding: 3px 10px;
+text-decoration: none;
+width: 200px;
+height: 54px;
+margin: 2px 0px;
+text-align: center;
+text-decoration: none;
+line-height: 54px;
+outline: none;
+font-size: 24px;
+background-color: #333;
+color: #fff;
+}
+
+#button-t li a:hover{
+background-color: #59b1eb ;
+}
+
+.menu-t li,.menu-t h3{
  float: left;
 }
 
-.topli li.topli-a a{
- background-color: #003161 ;
- color:#ffffff ;
- display: block;
- width:330px;
- margin-right:10px;
- height:70px;
- padding: 9px 0px 0px 0px;
- text-align: center;
- text-decoration:none;
- font-size: 200%;
+.menu-t li{
+ clear: left;
 }
 
-.topli li.topli-a a:hover{
- background-color:#66819c ;
+.menu-t h3{
+ margin-top: 17px;
+ padding-left: 10px;
 }
-
-.topli li.topli-b a{
- background-color: #6da7e0 ;
- color:#ffffff ;
- display: block;
- width:330px;
- margin-right:10px;
- height:70px;
- padding: 9px 0px 0px 0px;
- text-align: center;
- text-decoration:none;
- font-size: 200%;
+.name:after{
+  content: "";
+  display:block;
+  clear:both;
 }
-
-.topli li.topli-b a:hover{
- background-color:#66819c ;
+.member{
+  clear:left;
 }
-
-.bar{
-  padding-top:50px;
-  padding-bottom: 50px;
-}
-p.member-image img{
-  width:35%;
-  padding-right:20px;
-}
-.left-{
+.member img,.a{
   float:left;
 }
-.honbun{
-  padding-top:20px;
+.member img{
+  width:250px;
+  height:250px;
+  padding-right:10px;
+  margin-right: 20px;
+  margin-bottom:20px;
 }
+.a h3,.a ul{
+  margin-left:20px;
+  margin-right:20px;
+  padding-left:10px;
+}
+.hutoji{
+  font-size: 20px;
+  color:#CC6666;
+}
+.a{
+  background-color: #f8f8f8;
+  padding-top:20px;
+  padding-bottom:55px;
+}
+.member ul{
+  clear: left;
+  list-style-type: none;
+  padding-left:40px;
+}
+
 .link{
   background-color: #f8f8f8	;
   margin-bottom:10px;
