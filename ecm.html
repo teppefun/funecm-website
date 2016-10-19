@@ -14,10 +14,46 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/original.css" rel="stylesheet">
-
+    <style type="text/css">
+    body { padding-top: 80px; }
+    @media ( min-width: 768px ) {
+      #banner {
+        min-height: 300px;
+        border-bottom: none;
+      }
+      .bs-docs-section {
+        margin-top: 8em;
+      }
+      .bs-component {
+        position: relative;
+      }
+      .bs-component .modal {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        bottom: auto;
+        z-index: 1;
+        display: block;
+      }
+      .bs-component .modal-dialog {
+        width: 90%;
+      }
+      .bs-component .popover {
+        position: relative;
+        display: inline-block;
+        width: 220px;
+        margin: 20px;
+      }
+      .nav-tabs {
+        margin-bottom: 15px;
+      }
+      .progress {
+        margin-bottom: 10px;
+      }
+    }
+    </style>
     <!-- Custom CSS -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
-
     <link rel="stylesheet" type="text/css" href="css/jsxgraph.css" />
     <script type="text/javascript" src="js/jsxgraphcore.js"></script>
     <script type="text/javascript" src="js/GeonextReader.js"></script>
@@ -32,31 +68,32 @@
 </head>
 
 <body>
+  <div id="wrapper" class="padd">
 
-    <div id="wrapper" class="padd">
-
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="index.html" class="top">
-                        FUN-ECM
-                    </a>
-                </li>
-                <li>
-                    <a href="ecm.html">ECMとは</a>
-                </li>
-                <li>
-                    <a href="log.html">活動記録</a>
-                </li>
-                <li>
-                    <a href="member.html">メンバー紹介</a>
-                </li>
-                <li>
-                    <a href="link.html">リンク</a>
-                </li>
-            </ul>
+  <header>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand">FUN-ECM</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Top</a></li>
+            <li><a href="ecm.html">About</a></li>
+            <li><a href="log.html">Log</a></li>
+            <li><a href="member.html">Member</a></li>
+            <li><a href="link.html">Link</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </header>
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->

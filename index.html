@@ -24,6 +24,45 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/original.css" rel="stylesheet">
+    <style type="text/css">
+    body { padding-top: 80px; }
+    @media ( min-width: 768px ) {
+      #banner {
+        min-height: 300px;
+        border-bottom: none;
+      }
+      .bs-docs-section {
+        margin-top: 8em;
+      }
+      .bs-component {
+        position: relative;
+      }
+      .bs-component .modal {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        bottom: auto;
+        z-index: 1;
+        display: block;
+      }
+      .bs-component .modal-dialog {
+        width: 90%;
+      }
+      .bs-component .popover {
+        position: relative;
+        display: inline-block;
+        width: 220px;
+        margin: 20px;
+      }
+      .nav-tabs {
+        margin-bottom: 15px;
+      }
+      .progress {
+        margin-bottom: 10px;
+      }
+    }
+    </style>
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
 
@@ -37,34 +76,36 @@
 <body>
     <div id="wrapper" class="padd">
         <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="index.html" class="top">
-                        FUN-ECM
-                    </a>
-                </li>
-                <li>
-                    <a href="ecm.html">ECMとは</a>
-                </li>
-                <li>
-                    <a href="log.html">活動記録</a>
-                </li>
-                <li>
-                    <a href="member.html">メンバー紹介</a>
-                </li>
-                <li>
-                    <a href="link.html">リンク</a>
-                </li>
-            </ul>
-        </div>
+        <header>
+          <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+              <div class="navbar-header">
+                <a href="index.html" class="navbar-brand">FUN-ECM</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                  <li><a href="index.html">Top</a></li>
+                  <li><a href="ecm.html">About</a></li>
+                  <li><a href="log.html">Log</a></li>
+                  <li><a href="member.html">Member</a></li>
+                  <li><a href="link.html">Link</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </header>
         <!-- /#sidebar-wrapper -->
         <a class="twitter-share-button" href="https://twitter.com/share" data-dnt="true">Tweet</a>
        <div class="g-plus" data-action="share" data-annotation="bubble" data-href="https://neglect-yp.github.io/funecm-website/index.html"></div>
        <a href="https://neglect-yp.github.io/funecm-website/index.html" class="hatena-bookmark-button" data-hatena-bookmark-title="Syncer"
        data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加">
-       <img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
-     </a>
+       <img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a>
 
 <script>
  window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
