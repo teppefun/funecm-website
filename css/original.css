@@ -28,6 +28,7 @@ p.gazo img{
   padding-left:16.6%;
   padding-right:16.6%;
 }
+
 #button-t{
  padding-top: 50px;
 }
@@ -84,6 +85,7 @@ background-color: #59b1eb ;
 }
 .member{
   clear:left;
+  margin:auto;
 }
 .member img,.a{
   float:left;
@@ -92,7 +94,8 @@ background-color: #59b1eb ;
   width:250px;
   height:250px;
   padding-right:10px;
-  margin-right: 20px;
+  margin-left:50px;
+  margin-right: 40px;
   margin-bottom:20px;
 }
 .a h3,.a ul{

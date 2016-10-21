@@ -90,7 +90,11 @@
               <div class="navbar-collapse collapse" id="navbar-main">
                 <ul class="nav navbar-nav">
                   <li><a href="index.html">Top</a></li>
-                  <li><a href="ecm.html">About</a></li>
+                  <li><a href="ecm.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="ecm.html">ECMとは何？</a></li>
+                      <li><a href="ecm.html">活動目的</a></li>
+                    </ul>
                   <li><a href="log.html">Log</a></li>
                   <li><a href="member.html">Member</a></li>
                   <li><a href="link.html">Link</a></li>
@@ -101,11 +105,6 @@
           </div>
         </header>
         <!-- /#sidebar-wrapper -->
-        <a class="twitter-share-button" href="https://twitter.com/share" data-dnt="true">Tweet</a>
-       <div class="g-plus" data-action="share" data-annotation="bubble" data-href="https://neglect-yp.github.io/funecm-website/index.html"></div>
-       <a href="https://neglect-yp.github.io/funecm-website/index.html" class="hatena-bookmark-button" data-hatena-bookmark-title="Syncer"
-       data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加">
-       <img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a>
 
 <script>
  window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
@@ -162,18 +161,16 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Menu Toggle Script -->
-   <!--<script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-  </script> -->
-
+    <footer>
+      <a class="twitter-share-button" href="https://twitter.com/share" data-dnt="true">Tweet</a>
+     <div class="g-plus" data-action="share" data-annotation="bubble" data-href="https://neglect-yp.github.io/funecm-website/index.html"></div>
+     <a href="https://neglect-yp.github.io/funecm-website/index.html" class="hatena-bookmark-button" data-hatena-bookmark-title="Syncer"
+     data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加">
+     <img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a>
+   </div>
 </body>
 
 </html>
