@@ -6,10 +6,7 @@
   margin-bottom:20px;
   margin-top:20px;
 }
-.padd{
-  padding-left:16.6%;
-  padding-right:16.6%;
-}
+
 .top{
   font-size:30px;
   color:#e6855e;
@@ -23,10 +20,6 @@ p.gazo img{
 }
 .graf-title{
   text-align: center;
-}
-.padd{
-  padding-left:16.6%;
-  padding-right:16.6%;
 }
 
 #button-t{
@@ -134,4 +127,36 @@ background-color: #59b1eb ;
 }
 .link-margin{
   margin-bottom: 30px;
+}
+.navbar-sns{
+  float:left;
+}
+.jxgbox{
+  margin:auto;
+}
+.share-btn > ul{
+position: relative;
+ left: 50%;
+ float: left;
+ padding: 0;
+ margin: 0;
+ list-style: outside none none;
+}
+.social{
+    padding: 10px 0;
+    background: #ecf0f1;
+  }
+.share-btn {
+    position: relative;
+    padding: 10px 0;
+    margin: 0 auto !important;
+    overflow: hidden;
+}
+.share-btn li{
+  float: left;
+  list-style:none;
+  margin-right:20px;
+}
+.clear{
+  clear:left;
 }
