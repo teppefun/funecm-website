@@ -136,19 +136,17 @@ background-color: #59b1eb ;
 }
 .share-btn > ul{
 position: relative;
- left: 50%;
- float: left;
+ float: right;
  padding: 0;
  margin: 0;
  list-style: outside none none;
 }
 .social{
-    padding: 10px 0;
-    background: #ecf0f1;
+    padding: 5px 0;
   }
 .share-btn {
     position: relative;
-    padding: 10px 0;
+    padding: 5px 0;
     margin: 0 auto !important;
     overflow: hidden;
 }
