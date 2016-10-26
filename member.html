@@ -50,6 +50,10 @@
       .progress {
         margin-bottom: 10px;
       }
+      .padd{
+        padding-left: 16.8%;
+        padding-right: 16.8%;
+      }
     }
     </style>
     <!-- Custom CSS -->
@@ -82,7 +86,11 @@
               <div class="navbar-collapse collapse" id="navbar-main">
                 <ul class="nav navbar-nav">
                   <li><a href="index.html">Top</a></li>
-                  <li><a href="ecm.html">About</a></li>
+                  <li><a href="ecm.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="ecm.html">ECMとは何？</a></li>
+                      <li><a href="ecm.html">活動目的</a></li>
+                    </ul>
                   <li><a href="log.html">Log</a></li>
                   <li><a href="member.html">Member</a></li>
                   <li><a href="link.html">Link</a></li>
@@ -101,6 +109,7 @@
                     <div class="col-lg-12">
                         <h1 class="bg-primary">メンバー紹介</h1>
                         <div class="member">
+                          <ul>
                           <img src="image/gamine.jpg">
                           <div class="a">
                           <h3><mark>駒ヶ嶺 壮 (こまがみね そう)<mark></h3><br>

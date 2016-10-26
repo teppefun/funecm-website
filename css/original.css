@@ -6,10 +6,7 @@
   margin-bottom:20px;
   margin-top:20px;
 }
-.padd{
-  padding-left:16.6%;
-  padding-right:16.6%;
-}
+
 .top{
   font-size:30px;
   color:#e6855e;
@@ -24,10 +21,7 @@ p.gazo img{
 .graf-title{
   text-align: center;
 }
-.padd{
-  padding-left:16.6%;
-  padding-right:16.6%;
-}
+
 #button-t{
  padding-top: 50px;
 }
@@ -84,6 +78,7 @@ background-color: #59b1eb ;
 }
 .member{
   clear:left;
+  margin:auto;
 }
 .member img,.a{
   float:left;
@@ -92,7 +87,8 @@ background-color: #59b1eb ;
   width:250px;
   height:250px;
   padding-right:10px;
-  margin-right: 20px;
+  margin-left:50px;
+  margin-right: 40px;
   margin-bottom:20px;
 }
 .a h3,.a ul{
@@ -131,4 +127,34 @@ background-color: #59b1eb ;
 }
 .link-margin{
   margin-bottom: 30px;
+}
+.navbar-sns{
+  float:left;
+}
+.jxgbox{
+  margin:auto;
+}
+.share-btn > ul{
+position: relative;
+ float: right;
+ padding: 0;
+ margin: 0;
+ list-style: outside none none;
+}
+.social{
+    padding: 5px 0;
+  }
+.share-btn {
+    position: relative;
+    padding: 5px 0;
+    margin: 0 auto !important;
+    overflow: hidden;
+}
+.share-btn li{
+  float: left;
+  list-style:none;
+  margin-right:20px;
+}
+.clear{
+  clear:left;
 }
